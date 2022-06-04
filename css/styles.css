@@ -10,7 +10,6 @@
 
 * {
     box-sizing: border-box;
-
 }
 
 body {
@@ -103,7 +102,6 @@ p{
     width: 460px;
 }
 
-.column-2 {}
 
 .main__title {
     width: 360px;
@@ -116,10 +114,14 @@ p{
 }
 
 .card {
+    position: relative;
     width: 380px;
     background: #FFFFFF;
     box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
     border-radius: 10px;
+}
+.card-1{
+    padding-top: 200px;
 }
 .card-2{
     margin-top: 158px;
@@ -133,6 +135,14 @@ p{
     width: 284px;
     margin: 0 auto;
     padding: 48px 0;
+}
+.card__img{
+    margin-bottom: 56px;
+    margin-left: 30px;
+}
+.card__img-1{
+    position: absolute;
+    top: -30px;
 }
 
 .card__title {
