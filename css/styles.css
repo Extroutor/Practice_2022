@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Galien';
+    src: url("../fonts/Galien/AnyConv.com__Galien-Bold.woff2") format('woff2'),
+        url("../fonts/Galien/AnyConv.com__Galien-Bold.woff") format('woff'),
+        url("../fonts/Galien/OTF/Galien-Bold.otf") format('otf'),
+        url("../fonts/Galien/TTF/Galien-Bold.ttf") format('ttf');
+    ;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 740px;
+    background: linear-gradient(0deg, #98c3e82f 8.84%, rgba(152, 195, 232, 0) 31.12%);
+}
+
+.header{
+    position: relative;
+}
+
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 40px auto 0;
+}
+
+.content {
+    width: 945px;
+    margin: 0 auto;
+}
+
+.article {
+    padding-top: 101px;
+}
+
+.header__title {
+    width: 515px;
+    font-family: 'Galien';
+    font-size: 64px;
+    line-height: 74px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    margin: 0;
+}
+
+.header__arcticle-text {
+    width: 425px;
+    padding-top: 32px;
+    font-family: 'Gilroy';
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+    opacity: 0.6;
+}
+
+.button {
+    margin-top: 71px;
+    background: #5A98D0;
+    box-shadow: 5px 10px 20px rgba(1, 2, 3, 0.2);
+    border-radius: 10px;
+    border-style: none;
+    font-family: 'Gilroy';
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    padding: 15px 48px;
+}
+
+.ilustration{
+    position: absolute;
+    left: 700px;
+    top: 100px;
+}
