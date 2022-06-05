@@ -20,7 +20,8 @@ body {
     background: linear-gradient(0deg, #98c3e82f 8.84%, rgba(152, 195, 232, 0) 31.12%);
     background-repeat: no-repeat;
 }
-p{
+
+p {
     margin: 0;
     padding: 0;
 }
@@ -30,10 +31,78 @@ p{
 }
 
 .header__wrapper {
+    position: relative;
+    overflow-x: hidden;
+
     display: flex;
     justify-content: space-between;
     width: 1200px;
+    width: 90%;
     margin: 40px auto 0;
+}
+
+.menu-btn {
+    width: 30px;
+    height: 30px;
+    background: url("../img/svg/burger.svg") no-repeat center;
+    /* position: absolute;
+    right: 40px;
+    top: 40px;
+    z-index: 20; */
+    overflow: hidden;
+    transition: 0.5s;
+
+}
+.menu-btn-active {
+    width: 30px;
+    height: 30px;
+    background: url("../img/svg/close.svg") no-repeat center;
+    /* position: absolute;
+    right: 65px;
+    top: 40px;*/
+    z-index: 40; 
+    overflow: hidden;
+    transition: 0.5s;
+
+}
+
+.menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #5A98D0;
+    border-radius: 50px 0px 0px 0px;
+    z-index: 30;
+    transform: translateX(100%);
+    transition: 0.5s;
+}
+
+.menu-active{
+    transform: translateX(0%);
+    transition: 0.5s;
+}
+
+
+.menu-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50%;
+    flex-direction: column;
+}
+
+.menu-list a {
+    text-decoration: none;
+    font-family: 'Gilroy';
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
 }
 
 .header__content {
@@ -120,13 +189,16 @@ p{
     box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
     border-radius: 10px;
 }
-.card-1{
+
+.card-1 {
     padding-top: 200px;
 }
-.card-2{
+
+.card-2 {
     margin-top: 158px;
     margin-left: 80px;
 }
+
 .card-3 {
     margin-top: 100px;
 }
@@ -136,11 +208,13 @@ p{
     margin: 0 auto;
     padding: 48px 0;
 }
-.card__img{
+
+.card__img {
     margin-bottom: 56px;
     margin-left: 30px;
 }
-.card__img-1{
+
+.card__img-1 {
     position: absolute;
     top: -30px;
 }
@@ -171,6 +245,7 @@ p{
     display: inline-flex;
     padding-top: 32px;
 }
+
 .learn-more::after {
     content: url("../img/svg/arrow-r.svg");
     align-items: center;
