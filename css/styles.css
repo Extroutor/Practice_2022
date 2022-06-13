@@ -321,15 +321,37 @@ p {
     width: 100%;
 }
 
-.clients__post{
+.clients__post {
     padding-top: 96px
 }
 
-.clients__title{
+.clients__title {
     color: white
 }
 
-.clients__article{
+.clients__article {
     color: white;
     opacity: 0.6;
+}
+
+/*    TABLE    */
+.clients__table {
+    width: 100%;
+	border: 2px solid #5A98D0; /*Цвет фона*/
+	border-collapse: collapse;    border-spacing: 0;
+    height: auto;
+    margin-top: 123px;
+    font-family: 'Gilroy';
+    font-size: 20px;
+    line-height: 46px;
+    letter-spacing: 0.02em;
+    color: #F2F2F2;
+    text-align: center;
+}
+.clients__table td {
+    border: 1px solid #FFFFFF;
+    padding: 40px 42px;
+}
+.clients__table .more {
+    background: #1f3f6849;
 }
