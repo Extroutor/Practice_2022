@@ -138,31 +138,39 @@ p {
 }
 
 .header__title {
-    width: 515px;
+    /* width: 515px; */
+    width: 57%;
     font-family: 'Galien';
+    font-weight: 700;
 
     /* font-size: 64px; */
-    font-size: 4.3vw;
+    /* font-size: 4.3vw; */
 
-    line-height: 74px;
+    /* line-height: 74px; */
+    line-height: calc(1.1 * 1.1);
+
     letter-spacing: 0.04em;
     color: #1F3F68;
     margin: 0;
+    /* Адаптивный шрифт */
+    font-size: calc(34px + 30 * (100vw / 1366));
 }
 
 .header__arcticle-text {
-    width: 425px;
+    /* width: 425px; */
+    width: 45%;
     padding-top: 32px;
     font-family: 'Gilroy';
 
 
-    /* font-size: 16px; */
-    font-size: 1vw;
+    font-size: 16px;
+    /* font-size: 1vw; */
 
 
 
 
     line-height: 26px;
+    /* line-height: calc(1.2 * 1.2); */
     letter-spacing: 0.05em;
     color: #1F3F68;
     opacity: 0.6;
@@ -192,9 +200,11 @@ p {
 .ilustration {
     position: absolute;
     /* left: 700px; */
-    left: 50%;
+    /* left: 50%; */
+    left: 48%;
     /* top: 100px; */
-    top: 20%;
+    /* top: 20%; */
+    top: 15%;
 
     width: 48%;
 }
@@ -776,9 +786,89 @@ textarea {
     padding-bottom: 8px;
 }
 
-.map{
+.map {
     width: 100%;
     display: block;
     margin: 0 auto;
     margin: 127px 0 96px;
+}
+
+/*             Адаптив           */
+
+@media (max-width: 1024px) {
+    .header__article {
+        padding-top: 70px;
+    }
+
+}
+
+@media (max-width: 925px) {
+    .header__article {
+        padding-top: 50px;
+    }
+
+    .header__title {
+        width: 67%;
+    }
+}
+
+@media (max-width: 760px) {
+    .ilustration {
+        display: none;
+    }
+
+    .header__title {
+        width: 100%;
+        font-family: 'Galien';
+        font-weight: 700;
+
+        /* font-size: 64px; */
+        /* font-size: 4.3vw; */
+
+        /* line-height: 74px; */
+        line-height: calc(1.1 * 1.1);
+
+        letter-spacing: 0.04em;
+        color: #1F3F68;
+        margin: 0;
+        /* Адаптивный шрифт */
+        font-size: calc(34px + 30 * (100vw / 1366));
+    }
+
+    .header__arcticle-text {
+        width: 100%;
+        padding-top: 32px;
+        font-family: 'Gilroy';
+    
+    
+        font-size: 16px;
+        /* font-size: 1vw; */
+    
+    
+    
+    
+        line-height: 26px;
+        /* line-height: calc(1.2 * 1.2); */
+        letter-spacing: 0.05em;
+        color: #1F3F68;
+        opacity: 0.6;
+    }
+
+    /* .adaptive__bg{
+        background: url("../img/adaptivebg.png") no-repeat center;
+        /* background-size: cover; */
+        /* width: 90%; */
+    /* } */
+
+    .menu{
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .menu{
+        width: 100%;
+        border-radius: 0;
+    }
 }
