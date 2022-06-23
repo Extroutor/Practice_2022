@@ -643,9 +643,68 @@ p {
 .search input::placeholder {
     font-style: 'Gilroy';
     font-weight: 300;
-    color: #9E9C9C;  
+    color: #9E9C9C;
 }
 
-.main-blog{
+.main-blog {
     margin-top: 56px;
+}
+
+
+/* CONTACT */
+.contact {
+    margin-top: 57px;
+    display: flex;
+    /* justify-content: ; */
+}
+
+.contact__info {
+    width: 350px;
+}
+
+.contact__img {
+    width: 300px;
+    height: 181px;
+    background: url('../img/contact.png') no-repeat center;
+    background-size: cover;
+    padding-bottom: 31px;
+    margin-top: 60px;
+}
+
+.contact__info {
+    padding-top: 71px;
+}
+
+.contact__info-title {
+    font-family: 'Gilroy';
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+
+    padding-top: 24px;
+
+
+}
+.iskl{
+    padding-top: 40px;
+}
+
+.contact__info-text {
+    font-family: 'Gilroy';
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    opacity: 0.6;
+
+    padding-top: 24px;
+}
+.contact__info-text-item{
+    display: flex;
+    align-items: center;
+    padding-bottom: 16px;
+}
+.contact__info-text-item .text{
+    padding-left: 16px;
 }
