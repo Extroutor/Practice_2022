@@ -36,49 +36,65 @@
             </div>
         </div>
     </header>
-    <main class="contact">
+    <main>
         <div class="container">
-            <div class="address">
-                <div class="contact__img"></div>
-                <div class="contact__info">
-                    <div class="contact__info-item">
-                        <div class="contact__info-title">Address</div>
-                        <div class="contact__info-text">Id convallis placerat sit sed duis id amet volutpat quam a,
-                            pharetra.</div>
-                    </div>
-                    <div class="contact__info-item">
-                        <div class="contact__info-title iskl">Phone</div>
-                        <div class="contact__info-text">
-                            <div class="contact__info-text-item">
-                                <img class="contact__mini-img" src="./img/svg/phone.svg">
-                                <div class="text">+62-812-7313-4321</div>
-                            </div>
-                            <div class="contact__info-text-item">
-                                <img class="contact__mini-img" src="./img/svg/phone.svg">
-                                <div class="text">+62-817-000-1234</div>
+            <div class="contact">
+                <div class="">
+                    <div class="contact__img"></div>
+                    <div class="contact__info">
+                        <div class="contact__info-item">
+                            <div class="contact__info-title">Address</div>
+                            <div class="contact__info-text">Id convallis placerat sit sed duis id amet volutpat quam a,
+                                pharetra.</div>
+                        </div>
+                        <div class="contact__info-item">
+                            <div class="contact__info-title iskl">Phone</div>
+                            <div class="contact__info-text">
+                                <div class="contact__info-text-item">
+                                    <img class="contact__mini-img" src="./img/svg/phone.svg">
+                                    <div class="text">+62-812-7313-4321</div>
+                                </div>
+                                <div class="contact__info-text-item">
+                                    <img class="contact__mini-img" src="./img/svg/phone.svg">
+                                    <div class="text">+62-817-000-1234</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="contact__info-item">
-                        <div class="contact__info-title">Online service</div>
-                        <div class="contact__info-text">
-                            <div class="contact__info-text-item">
-                                <img class="contact__mini-img" src="./img/svg/web.svg">
-                                <div class="text">www.afrianska.com</div>
-                            </div>
-                            <div class="contact__info-text-item">
-                                <img class="contact__mini-img" src="./img/svg/email.svg">
-                                <div class="text">hello.afrian@gmail.com</div>
+                        <div class="contact__info-item">
+                            <div class="contact__info-title">Online service</div>
+                            <div class="contact__info-text">
+                                <div class="contact__info-text-item">
+                                    <img class="contact__mini-img" src="./img/svg/web.svg">
+                                    <div class="text">www.afrianska.com</div>
+                                </div>
+                                <div class="contact__info-text-item">
+                                    <img class="contact__mini-img" src="./img/svg/email.svg">
+                                    <div class="text">hello.afrian@gmail.com</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="contact__form">
+                <div class="send__message">
+                    <div class="sm__container">
+                        <div class="contact__info-title iskl2">Send us message</div>
+                        <form method="post">
+                            <label class="label" for="name">Full name</label>
+                            <input type="text" id="name" name="name" value="" placeholder="Your Name" required="required"
+                                autofocus="autofocus" />
 
+                            <label class="label" for="email">Email</label>
+                            <input type="email" id="email" name="email" value="" placeholder="Your Email"
+                                required="required" />
+
+                            <label class="label" for="message">Message</label>
+                            <textarea id="message" name="message"
+                                placeholder="Your message" required="required"
+                                data-minlength="350"></textarea>
+                            <button class="button" type="submit">Submit</button>
+                        </form>
+                    </div>
                 </div>
-            </div>
-            <div class="send__message">
-
             </div>
         </div>
     </main>

@@ -592,6 +592,7 @@ p {
 
 .blog-header__title {
     font-family: 'Gilroy';
+    font-weight: 500;
     font-size: 44px;
     line-height: 74px;
     /* identical to box height, or 168% */
@@ -653,9 +654,9 @@ p {
 
 /* CONTACT */
 .contact {
-    margin-top: 57px;
+    padding-top: 57px;
     display: flex;
-    /* justify-content: ; */
+    justify-content: space-between;
 }
 
 .contact__info {
@@ -681,12 +682,16 @@ p {
     line-height: 30px;
     letter-spacing: 0.04em;
     color: #1F3F68;
+    text-transform: uppercase;
+    font-weight: 500;
 
     padding-top: 24px;
 
 
+
 }
-.iskl{
+
+.contact__info-title.iskl {
     padding-top: 40px;
 }
 
@@ -700,11 +705,71 @@ p {
 
     padding-top: 24px;
 }
-.contact__info-text-item{
+
+.contact__info-text-item {
     display: flex;
     align-items: center;
     padding-bottom: 16px;
 }
-.contact__info-text-item .text{
+
+.contact__info-text-item .text {
     padding-left: 16px;
+}
+
+.send__message {
+    width: 540px;
+    background: #FFFFFF;
+    box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+
+}
+
+.sm__container {
+    width: 430px;
+    margin: 56px auto;
+}
+
+.contact__info-title.iskl2 {
+    padding-top: 0px;
+    padding-bottom: 48px;
+}
+
+.sm__container>form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    opacity: 0.4;
+    /* blue_03 */
+
+    border: 1px solid #356EAD;
+    border-radius: 10px;
+    padding: 21px 36px;
+
+    margin-bottom: 32px;
+}
+
+textarea {
+    opacity: 0.4;
+    /* blue_03 */
+
+    border: 1px solid #356EAD;
+    border-radius: 10px;
+    resize: none;
+    padding: 21px 36px;
+    margin-bottom: 72px;
+
+}
+
+.label {
+    font-family: 'Gilroy';
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+
+    opacity: 0.8;
+
+    padding-bottom: 8px;
 }
