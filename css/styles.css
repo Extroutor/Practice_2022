@@ -401,6 +401,8 @@ p {
     letter-spacing: 0.02em;
     color: #F2F2F2;
     text-align: center;
+
+    margin-bottom: 125px;
 }
 
 .clients__table td {
@@ -417,7 +419,7 @@ p {
 /*    FOOTER    */
 .footer {
     /* background: #5A98D0; */
-    padding-top: 125px;
+    /* padding-top: 125px; */
 }
 
 
@@ -772,4 +774,11 @@ textarea {
     opacity: 0.8;
 
     padding-bottom: 8px;
+}
+
+.map{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    margin: 127px 0 96px;
 }
