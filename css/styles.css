@@ -250,6 +250,7 @@ p {
 
 .card-1 {
     padding-top: 200px;
+
 }
 
 .card-2 {
@@ -262,7 +263,8 @@ p {
 }
 
 .card__container {
-    width: 284px;
+    /* width: 284px; */
+    width: 75%;
     margin: 0 auto;
     padding: 48px 0;
 }
@@ -279,10 +281,13 @@ p {
 
 .card__title {
     font-family: 'Gilroy';
+    font-weight: 500;
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 0.05em;
     color: #1F3F68;
+
+    padding-bottom: 16px;
 }
 
 .card__article {
@@ -346,10 +351,15 @@ p {
 }
 
 .example-1 {
-    width: 100%;
+    /* width: 100%;
     height: 420px;
     background: url('../img/4.png') no-repeat center;
     background-size: cover;
+    border-radius: 10px; */
+    width: 100%;
+    /* height: 420px; */
+    /* background: url('../img/4.png') no-repeat center;
+    background-size: cover; */
     border-radius: 10px;
 }
 
@@ -418,6 +428,7 @@ p {
 .clients__table td {
     border: 1px solid #FFFFFF;
     padding: 40px 42px;
+    font-size: 20px;
 }
 
 .clients__table .more {
@@ -478,7 +489,7 @@ p {
 }
 
 .contacts {
-    width: 300px;
+    width: 30%;
 }
 
 .contacts__logo-title {
@@ -795,9 +806,121 @@ textarea {
 
 /*             Адаптив           */
 
+@media(max-width: 1270px) {
+    .card {
+        width: 300px;
+    }
+
+    .card-1 {
+        padding-top: 150px;
+    }
+
+    .card__title {
+        font-size: 17px;
+    }
+
+    .card__article {
+        font-size: 13px;
+    }
+
+    .learn-more {
+        font-size: 12px;
+    }
+
+    .card__img {
+        width: 162px;
+        height: 112px;
+    }
+
+    .card__img-1 {
+        width: 204px;
+        height: 177px;
+        top: -30px;
+        margin-left: 20px;
+    }
+
+    .card__img-3 {
+        width: 136px;
+        height: 111px;
+    }
+
+    .main__title {
+        font-size: 32px;
+    }
+
+    .card__container {
+        padding: 38px 0;
+    }
+
+}
+
+@media(max-width: 1068px) {
+    .footer__inter {
+        display: block
+    }
+
+    .footer__title {
+        font-size: 36px;
+    }
+
+    .info {
+        width: 50%;
+    }
+}
+
 @media (max-width: 1024px) {
     .header__article {
         padding-top: 70px;
+    }
+
+    .clients__table td {
+        padding: 2% 1%;
+        font-size: 55%;
+    }
+
+    .card {
+        width: 260px;
+    }
+
+    .card-1 {
+        padding-top: 130px;
+    }
+
+    .card__title {
+        font-size: 15px;
+    }
+
+    .card__article {
+        font-size: 11px;
+    }
+
+    .learn-more {
+        font-size: 11px;
+    }
+
+    .card__img {
+        width: 142px;
+        height: 100px;
+        margin-left: 15px;
+    }
+
+    .card__img-1 {
+        width: 184px;
+        height: 157px;
+        top: -30px;
+    }
+
+    .card__img-3 {
+        width: 116px;
+        height: 91px;
+    }
+
+    .main__title {
+        font-size: 28px;
+    }
+
+    .card__container {
+        padding: 28px 0;
     }
 
 }
@@ -810,6 +933,90 @@ textarea {
     .header__title {
         width: 67%;
     }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main__title {
+        width: 100%;
+        font-size: 33px;
+
+
+    }
+
+    .column-1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column-2 {
+        margin-top: 100px;
+    }
+
+    .main {
+        margin-top: 140px
+    }
+
+    .card {
+        width: 300px;
+    }
+
+    .card-1 {
+        padding-top: 150px;
+    }
+
+    .card-2 {
+        margin-top: 100px;
+        margin-left: 0;
+    }
+
+    .card__title {
+        font-size: 17px;
+    }
+
+    .card__article {
+        font-size: 13px;
+    }
+
+    .learn-more {
+        font-size: 12px;
+    }
+
+    .card__img {
+        width: 162px;
+        height: 112px;
+    }
+
+    .card__img-1 {
+        width: 204px;
+        height: 177px;
+        top: -30px;
+        margin-left: 20px;
+    }
+
+    .card__img-3 {
+        width: 136px;
+        height: 111px;
+        margin-left: 25px;
+    }
+
+    .main__title {
+        font-size: 32px;
+    }
+
+    .card__container {
+        padding: 38px 0;
+    }
+
+
+
+
+
 }
 
 @media (max-width: 760px) {
@@ -819,56 +1026,86 @@ textarea {
 
     .header__title {
         width: 100%;
-        font-family: 'Galien';
-        font-weight: 700;
-
-        /* font-size: 64px; */
-        /* font-size: 4.3vw; */
-
-        /* line-height: 74px; */
-        line-height: calc(1.1 * 1.1);
-
-        letter-spacing: 0.04em;
-        color: #1F3F68;
-        margin: 0;
-        /* Адаптивный шрифт */
-        font-size: calc(34px + 30 * (100vw / 1366));
     }
 
     .header__arcticle-text {
         width: 100%;
-        padding-top: 32px;
-        font-family: 'Gilroy';
-    
-    
-        font-size: 16px;
-        /* font-size: 1vw; */
-    
-    
-    
-    
-        line-height: 26px;
-        /* line-height: calc(1.2 * 1.2); */
-        letter-spacing: 0.05em;
-        color: #1F3F68;
-        opacity: 0.6;
     }
 
-    /* .adaptive__bg{
-        background: url("../img/adaptivebg.png") no-repeat center;
-        /* background-size: cover; */
-        /* width: 90%; */
-    /* } */
-
-    .menu{
+    .menu {
         width: 50%;
     }
 
 }
 
 @media (max-width: 500px) {
-    .menu{
+    .menu {
         width: 100%;
         border-radius: 0;
+    }
+    
+    .card {
+        width: 260px;
+    }
+
+    .card-1 {
+        padding-top: 130px;
+    }
+
+    .card__title {
+        font-size: 15px;
+    }
+
+    .card__article {
+        font-size: 11px;
+    }
+
+    .learn-more {
+        font-size: 11px;
+    }
+
+    .card__img {
+        width: 142px;
+        height: 100px;
+        margin-left: 15px;
+    }
+
+    .card__img-1 {
+        width: 184px;
+        height: 157px;
+        top: -30px;
+    }
+
+    .card__img-3 {
+        width: 116px;
+        height: 91px;
+    }
+
+    .main__title {
+        font-size: 28px;
+    }
+
+    .card__container {
+        padding: 28px 0;
+    }
+    .header{
+        height: 680px;
+    }
+    .main{
+        margin-top: 80px;
+    }
+
+}
+
+@media(max-width: 390px) {
+    .main__title {
+        font-size: 22px;
+    }
+    .main {
+        margin-top: 70px
+    }
+    .button {
+        font-size: 12px;
+        padding: 10px 28px;
     }
 }
